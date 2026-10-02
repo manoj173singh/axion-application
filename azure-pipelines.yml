@@ -1,0 +1,10 @@
+trigger: none
+pool: axionagent
+stages:
+  - stage: 
+    jobs:
+      - job: datamanifiest
+        displayName: databasedeploymemnt
+        steps:
+          - 
+
