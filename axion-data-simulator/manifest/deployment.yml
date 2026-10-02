@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: datasimulator
+spec:
+  selector:
+    matchLabels:
+      app: datasimulator
+  template:
+    metadata:
+      labels:
+        app: datasimulator
+    spec:
+      containers:
+      - name: datasimulator
+        image: axion321.azurecr.io/datasimulator:v6
+        ports:
+        - containerPort: 8000

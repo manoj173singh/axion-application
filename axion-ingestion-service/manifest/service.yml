@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: axioningestionservice
+spec:
+  type: ClusterIP
+  selector:
+    app: axioingestion
+  ports:
+  - port: 8000
+    targetPort: 8000

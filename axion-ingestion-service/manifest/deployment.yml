@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: axioingestion
+spec:
+  selector:
+    matchLabels:
+      app: axioingestion
+  template:
+    metadata:
+      labels:
+        app: axioingestion
+    spec:
+      containers:
+      - name: axioingestion
+        image: axion321.azurecr.io/axioningestion:v6
+        ports:
+        - containerPort: 8000
