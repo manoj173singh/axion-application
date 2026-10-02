@@ -6,5 +6,5 @@ stages:
       - job: datamanifiest
         displayName: databasedeploymemnt
         steps:
-          - 
-
+        
+        
